@@ -19,17 +19,12 @@ for k in range(1, n):
                 prev[i] = j
 
 path = []
-print(t, prev, prev[t-1])
 j = prev[t-1]
 path.append(t-1)
-print(j)
 while j!=32767:
     path.append(j)
     j = prev[j]
 path = path[::-1]  
-
-print(d)
-print(path)
 
 if d[t-1] == 32767:
     result = "N"
